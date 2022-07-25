@@ -10,7 +10,7 @@ import {
 export const Statistic = ({ title, stats }) => {
   return (
     <StatSection>
-      <StatHeader>{title}</StatHeader>
+      {title && <StatHeader>{title}</StatHeader>}
       <StatList>
         {stats.map(stats => (
           <StatListItem key={stats.id}>
